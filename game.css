@@ -1,0 +1,96 @@
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    padding-top: 15px;
+    width: 1500px;
+    }
+    .gameMenu{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        width:100%;
+        height:40px;
+        margin-bottom:120px;
+        cursor:pointer;
+    }
+    .menuItem{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.33%;
+        height:100%;
+        background:rgb(231, 210, 141);
+    }
+    
+    .menuItemTips{
+        width:100%;
+        text-align: center;
+        font-size:15px;
+        margin:auto;
+    }
+    
+        .menuItemContent {
+        border-top:1px solid rgb(198, 186, 117);
+        display: none;
+        position: absolute;
+        top:40px;
+        background:rgb(235, 227, 161);
+        width:100%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .menuItemContentOption{
+        border-bottom:1px solid rgb(198, 186, 117);
+        padding:10px;
+        font-size:15px;
+        text-align:center;
+        margin:0;
+    }
+
+    
+    .menuItem:hover .menuItemContent {
+        display: block;
+    }
+    .gameContent{
+        display:flex;
+        flex-direction: row;
+        width:100%;
+        justify-content:space-between;
+    }
+    .gameBody{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        cursor:pointer
+    }
+    #tipImg{
+        width: 300px;
+        margin:auto;
+    }
+
+
+    .rowContainer{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction:row;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        width:100%;
+        margin:1px;
+    }
+
+.opacity
+{
+    margin:1px;
+    opacity: 0.5;
+    cursor: auto;
+}
+.notopacity
+{
+    margin:1px;
+    opacity: 1;
+    cursor: pointer;
+}

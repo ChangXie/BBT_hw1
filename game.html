@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拼图游戏</title>
+    <script src="game.js"></script>
+    <link href="game.css" rel="stylesheet"/>
+</head>
+<body style = "padding:0;margin:0">
+    <div class = "gameContainer">
+        <div class = "gameMenu">
+            <div class = "menuItem">
+                <p class="menuItemTips">选择图片</p>
+                <div class="menuItemContent">
+                    <p class="menuItemContentOption" onclick="onChooseImage(0)">照镜子的猫</p>
+                    <p class="menuItemContentOption" onclick="onChooseImage(1)">大狮子和小狮子</p>
+                    <p class="menuItemContentOption" onclick="onChooseImage(2)">绿色的森林</p>
+                </div>
+            </div>
+
+            <div class="menuItem">
+                <p class="menuItemTips">选择难度</p>
+                <div class="menuItemContent">
+                    <p class="menuItemContentOption" onclick="onChooseDifficulty(3)">3*3</p>
+                    <p class="menuItemContentOption" onclick="onChooseDifficulty(4)">4*4</p>
+                    <p class="menuItemContentOption" onclick="onChooseDifficulty(5)">5*5</p>
+                </div>
+            </div> 
+            
+            <div class="menuItem" onclick="opening()">
+                <p class="menuItemTips" onclick="start()">重新开始</p>
+            </div>
+        </div>
+
+        <div class = "gameContent">
+            <div class="gameBody"></div>
+            <div>
+                <img src="./img/cat.jpg" id = "tipImg"/>
+                <p id = "score">当前操作次数：0</p>
+                <p id = "abc">当前花费时间：0 s</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
